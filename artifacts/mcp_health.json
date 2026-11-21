@@ -1,0 +1,57 @@
+{
+  "tool": "get_rc_health",
+  "network": "lasna",
+  "verdict": "HEALTHY",
+  "confidence": "proven",
+  "summary": "No debt, reserves 0.4864178 REACT (at least 10 reactions), 3/3 subscriptions active, 0 recent reverts (0.0/hour).",
+  "findings": [
+    {
+      "stage": "funding",
+      "verdict": "FUNDED",
+      "confidence": "proven",
+      "summary": "Omni: debt 0 REACT, reserves 0.4864178 REACT. Legacy proxy: debt 0 REACT, reserves 0 REACT. Contract balance 0 REACT (not counted as funding unless the contract implements pay()).",
+      "evidence": [
+        {
+          "kind": "eth_call",
+          "ref": "0x8888888888888888888888888888888888888888",
+          "note": "debt(address), reserves(address) on the Omni system contract"
+        },
+        {
+          "kind": "eth_call",
+          "ref": "0x0000000000000000000000000000000000ffffff",
+          "note": "debts(address), reserves(address) on the legacy proxy; eth_getBalance on the contract"
+        }
+      ]
+    }
+  ],
+  "fix": [],
+  "limits": [],
+  "data": {
+    "account": {
+      "debt": "0",
+      "reserves": "486417800000000000",
+      "legacyDebt": "0",
+      "legacyReserves": "0",
+      "balance": "0"
+    },
+    "subscriptions": {
+      "total": 3,
+      "active": 3
+    },
+    "feeModel": {
+      "perReaction": "0.016 REACT",
+      "cushion": "0.16 REACT",
+      "assumedReactGas": "60000",
+      "extraGas": "100000",
+      "coeffPer1000": "1000",
+      "feeParamsLive": true
+    },
+    "revertRate": {
+      "reverts": 0,
+      "windowBlocks": 20001,
+      "perHour": 0,
+      "flagAbovePerHour": 6
+    },
+    "rpcRequests": 15
+  }
+}

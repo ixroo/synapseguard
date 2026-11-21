@@ -1,0 +1,42 @@
+{
+  "generated_utc": "2026-11-21T21:58:09.898390+00:00",
+  "emergency_freeze_loop": {
+    "intent_id": 1,
+    "scenario": "emergency_freeze_unichain_cascade",
+    "origin_propose_tx": "0xc9aef6b40220ed0962132b418d8b9f807fafbe26fc9cec1eec6f2822f553bec7",
+    "lasna_submit_tx": "0x7275a841e395bf2073ba512cde4b9019c5db7fb155141f19b14c94bc8fb3346f",
+    "base_settlement_tx": "0xe966d7b67ebe8918dbda2e5dbe74807493c50a74ed6ee65075e4b901e408df4a",
+    "unichain_freeze_tx": "0x8eeacb6f302699791a301ace042c8d341757c6c84815133faf311b7b24bf169f",
+    "lasna_sync_tx": "0x9d51cc233a683d9216fc7e7a2e46eaa27bc1d9204d381452f6adeaea77c360c9",
+    "decision": "FREEZE_EMERGENCY",
+    "risk_score_bps": 10000,
+    "confidence": 0.99,
+    "rationale": "Critical exploit pattern detected. Liquidity utilization is extreme at 95%, anomaly hint is 9400 bps, and the intent severely breaches the single-intent cap, indicating a self-extraction attempt under active threat.",
+    "engine": "gemini-flash-lite-latest",
+    "model_digest_hex": "0xb69fc5b218fc75065d8a2ceee2e71963e5d2187e81e33b8981cfed722164ce68",
+    "vault_outcome_code": 3,
+    "vault_outcome_name": "FROZEN_BY_AI",
+    "vault_executed": false,
+    "lasna_synced": true,
+    "unichain_locked_after": true,
+    "gemini_latency_ms": 1964.08,
+    "lasna_pickup_latency_ms": 2460.47,
+    "total_e2e_latency_ms": 16590.65,
+    "created_utc": "2026-11-21T21:57:28.808781+00:00"
+  },
+  "governance_unfreeze_sync": {
+    "base_unfreeze_tx": "0x760dd134c84f4d554fc80849db2fb0f2f8281b9519832a6335a0e29ac457d207",
+    "unichain_unfreeze_tx": "0x32dbc673c413c92111efc01b57010aa8ab11042a90d12639bb237ed058fa615e",
+    "base_frozen_after": false,
+    "unichain_locked_after": false
+  },
+  "ai_offline_cron_timeout_loop": {
+    "intent_id": 2,
+    "origin_propose_tx": "0xca3a0f40843b50692597507f8a6d8e5ce6bc78ba645c2ece0d38bc805f104b09",
+    "base_settlement_tx": "0xbbf11a08346fb4e556929144785123c6018135212923b9f6aa67c606434df6ea",
+    "lasna_sync_tx": "0x8ec838fe5f5dd3b3fba5022c5a1fd390e6a00a9b2e515d91f7daa9ef9d1ff19c",
+    "outcome_name": "TIMED_OUT",
+    "lasna_synced": true,
+    "cron_subscribed_after": false
+  }
+}

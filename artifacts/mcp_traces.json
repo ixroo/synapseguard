@@ -1,0 +1,435 @@
+{
+  "intent1_freeze_origin": {
+    "tool": "trace_origin_event",
+    "network": "lasna",
+    "verdict": "REACTED_NO_CALLBACK",
+    "confidence": "proven",
+    "summary": "react() ran without requesting a callback. If one was expected, check the condition inside react().",
+    "findings": [
+      {
+        "stage": "sequencing",
+        "verdict": "SEQUENCED_CARRIED",
+        "confidence": "proven",
+        "summary": "Origin block 61881829 was processed in Reactive block 8924814; the log was carried for reaction (it matched an active subscriber then).",
+        "evidence": [
+          {
+            "kind": "rnk_getBlockSequences",
+            "ref": "8924814",
+            "note": "row with the origin tx and log index"
+          }
+        ]
+      },
+      {
+        "stage": "reaction",
+        "verdict": "REACTED",
+        "confidence": "proven",
+        "summary": "react() succeeded and requested 0 callback(s).",
+        "evidence": [
+          {
+            "kind": "reactive tx",
+            "ref": "0x143e8541c9336685481e09dae89771ff1d0cc728e420239a867edd10f7badcbb",
+            "note": "block 8924814, gasUsed 284623",
+            "url": "https://lasna.reactscan.net/tx/0x143e8541c9336685481e09dae89771ff1d0cc728e420239a867edd10f7badcbb"
+          }
+        ]
+      }
+    ],
+    "fix": [],
+    "limits": [],
+    "data": {
+      "originLogs": {
+        "items": [
+          {
+            "logIndex": 1,
+            "address": "0x6B81f6C156e6AbdA4040E5534813736d8acf5BEd",
+            "topic0": "0xccac21fa7b4be4d3bbb6132fa1c245f0c45c77d27234b9db3741130cb9452e8d",
+            "topics": 4
+          }
+        ],
+        "total": 1,
+        "truncated": false
+      },
+      "processedInBlock": 8924814,
+      "reaction": {
+        "tx": "0x143e8541c9336685481e09dae89771ff1d0cc728e420239a867edd10f7badcbb",
+        "block": 8924814,
+        "route": "omni (0x8888\u20268888)",
+        "rc": "0xC2c5A2d58024F985E3060875590b4693d789559B",
+        "rcAttribution": "proven",
+        "origin": {
+          "chainId": 84532,
+          "chain": "Base Sepolia",
+          "contract": "0x6B81f6C156e6AbdA4040E5534813736d8acf5BEd",
+          "block": 61881829,
+          "tx": "0xc9aef6b40220ed0962132b418d8b9f807fafbe26fc9cec1eec6f2822f553bec7",
+          "logIndex": 1,
+          "topicCount": 4
+        },
+        "filterId": "0x3673954f8dc61e8442314b5f1be7bd1d",
+        "gasUsed": 284623
+      },
+      "rpcRequests": 63
+    }
+  },
+  "intent2_timeout_origin": {
+    "tool": "trace_origin_event",
+    "network": "lasna",
+    "verdict": "REACTED_NO_CALLBACK",
+    "confidence": "proven",
+    "summary": "react() ran without requesting a callback. If one was expected, check the condition inside react().",
+    "findings": [
+      {
+        "stage": "sequencing",
+        "verdict": "SEQUENCED_CARRIED",
+        "confidence": "proven",
+        "summary": "Origin block 61881952 was processed in Reactive block 8924837; the log was carried for reaction (it matched an active subscriber then).",
+        "evidence": [
+          {
+            "kind": "rnk_getBlockSequences",
+            "ref": "8924837",
+            "note": "row with the origin tx and log index"
+          }
+        ]
+      },
+      {
+        "stage": "reaction",
+        "verdict": "REACTED",
+        "confidence": "proven",
+        "summary": "react() succeeded and requested 0 callback(s).",
+        "evidence": [
+          {
+            "kind": "reactive tx",
+            "ref": "0x866ae9f9498f169b3616afdde4270ab1c81e44005914525274a5a37034b5f52f",
+            "note": "block 8924837, gasUsed 284599",
+            "url": "https://lasna.reactscan.net/tx/0x866ae9f9498f169b3616afdde4270ab1c81e44005914525274a5a37034b5f52f"
+          }
+        ]
+      }
+    ],
+    "fix": [],
+    "limits": [],
+    "data": {
+      "originLogs": {
+        "items": [
+          {
+            "logIndex": 0,
+            "address": "0x6B81f6C156e6AbdA4040E5534813736d8acf5BEd",
+            "topic0": "0xccac21fa7b4be4d3bbb6132fa1c245f0c45c77d27234b9db3741130cb9452e8d",
+            "topics": 4
+          }
+        ],
+        "total": 1,
+        "truncated": false
+      },
+      "processedInBlock": 8924837,
+      "reaction": {
+        "tx": "0x866ae9f9498f169b3616afdde4270ab1c81e44005914525274a5a37034b5f52f",
+        "block": 8924837,
+        "route": "omni (0x8888\u20268888)",
+        "rc": "0xC2c5A2d58024F985E3060875590b4693d789559B",
+        "rcAttribution": "proven",
+        "origin": {
+          "chainId": 84532,
+          "chain": "Base Sepolia",
+          "contract": "0x6B81f6C156e6AbdA4040E5534813736d8acf5BEd",
+          "block": 61881952,
+          "tx": "0xca3a0f40843b50692597507f8a6d8e5ce6bc78ba645c2ece0d38bc805f104b09",
+          "logIndex": 0,
+          "topicCount": 4
+        },
+        "filterId": "0x3673954f8dc61e8442314b5f1be7bd1d",
+        "gasUsed": 284599
+      },
+      "rpcRequests": 64
+    }
+  },
+  "intent3_approve_origin": {
+    "tool": "trace_origin_event",
+    "network": "lasna",
+    "verdict": "REACTED_NO_CALLBACK",
+    "confidence": "proven",
+    "summary": "react() ran without requesting a callback. If one was expected, check the condition inside react().",
+    "findings": [
+      {
+        "stage": "sequencing",
+        "verdict": "SEQUENCED_CARRIED",
+        "confidence": "proven",
+        "summary": "Origin block 61882430 was processed in Reactive block 8924927; the log was carried for reaction (it matched an active subscriber then).",
+        "evidence": [
+          {
+            "kind": "rnk_getBlockSequences",
+            "ref": "8924927",
+            "note": "row with the origin tx and log index"
+          }
+        ]
+      },
+      {
+        "stage": "reaction",
+        "verdict": "REACTED",
+        "confidence": "proven",
+        "summary": "react() succeeded and requested 0 callback(s).",
+        "evidence": [
+          {
+            "kind": "reactive tx",
+            "ref": "0xd0bc4b6f018a7e9e76a0d9df1e92e4302f49091af1e5b043368025cf79e59bfe",
+            "note": "block 8924927, gasUsed 284587",
+            "url": "https://lasna.reactscan.net/tx/0xd0bc4b6f018a7e9e76a0d9df1e92e4302f49091af1e5b043368025cf79e59bfe"
+          }
+        ]
+      }
+    ],
+    "fix": [],
+    "limits": [],
+    "data": {
+      "originLogs": {
+        "items": [
+          {
+            "logIndex": 0,
+            "address": "0x6B81f6C156e6AbdA4040E5534813736d8acf5BEd",
+            "topic0": "0xccac21fa7b4be4d3bbb6132fa1c245f0c45c77d27234b9db3741130cb9452e8d",
+            "topics": 4
+          }
+        ],
+        "total": 1,
+        "truncated": false
+      },
+      "processedInBlock": 8924927,
+      "reaction": {
+        "tx": "0xd0bc4b6f018a7e9e76a0d9df1e92e4302f49091af1e5b043368025cf79e59bfe",
+        "block": 8924927,
+        "route": "omni (0x8888\u20268888)",
+        "rc": "0xC2c5A2d58024F985E3060875590b4693d789559B",
+        "rcAttribution": "proven",
+        "origin": {
+          "chainId": 84532,
+          "chain": "Base Sepolia",
+          "contract": "0x6B81f6C156e6AbdA4040E5534813736d8acf5BEd",
+          "block": 61882430,
+          "tx": "0xa3864b454b693eb2a00164a9629c67028ebc592374da9d63f450b5fc561fc4b2",
+          "logIndex": 0,
+          "topicCount": 4
+        },
+        "filterId": "0x3673954f8dc61e8442314b5f1be7bd1d",
+        "gasUsed": 284587
+      },
+      "rpcRequests": 62
+    }
+  },
+  "intent17_reject_origin": {
+    "tool": "trace_origin_event",
+    "network": "lasna",
+    "verdict": "REACTED_NO_CALLBACK",
+    "confidence": "proven",
+    "summary": "react() ran without requesting a callback. If one was expected, check the condition inside react().",
+    "findings": [
+      {
+        "stage": "sequencing",
+        "verdict": "SEQUENCED_CARRIED",
+        "confidence": "proven",
+        "summary": "Origin block 61883609 was processed in Reactive block 8925151; the log was carried for reaction (it matched an active subscriber then).",
+        "evidence": [
+          {
+            "kind": "rnk_getBlockSequences",
+            "ref": "8925151",
+            "note": "row with the origin tx and log index"
+          }
+        ]
+      },
+      {
+        "stage": "reaction",
+        "verdict": "REACTED",
+        "confidence": "proven",
+        "summary": "react() succeeded and requested 0 callback(s).",
+        "evidence": [
+          {
+            "kind": "reactive tx",
+            "ref": "0xb1ba98afb6ee2bd3be292a265da8d2e355ba7a9481d7601d291f2f8a6151074c",
+            "note": "block 8925151, gasUsed 284611",
+            "url": "https://lasna.reactscan.net/tx/0xb1ba98afb6ee2bd3be292a265da8d2e355ba7a9481d7601d291f2f8a6151074c"
+          }
+        ]
+      }
+    ],
+    "fix": [],
+    "limits": [],
+    "data": {
+      "originLogs": {
+        "items": [
+          {
+            "logIndex": 0,
+            "address": "0x6B81f6C156e6AbdA4040E5534813736d8acf5BEd",
+            "topic0": "0xccac21fa7b4be4d3bbb6132fa1c245f0c45c77d27234b9db3741130cb9452e8d",
+            "topics": 4
+          }
+        ],
+        "total": 1,
+        "truncated": false
+      },
+      "processedInBlock": 8925151,
+      "reaction": {
+        "tx": "0xb1ba98afb6ee2bd3be292a265da8d2e355ba7a9481d7601d291f2f8a6151074c",
+        "block": 8925151,
+        "route": "omni (0x8888\u20268888)",
+        "rc": "0xC2c5A2d58024F985E3060875590b4693d789559B",
+        "rcAttribution": "proven",
+        "origin": {
+          "chainId": 84532,
+          "chain": "Base Sepolia",
+          "contract": "0x6B81f6C156e6AbdA4040E5534813736d8acf5BEd",
+          "block": 61883609,
+          "tx": "0xdeef39d07dd1a60911de63121081e273967f64fd1b6fa5e21a275dc81add8176",
+          "logIndex": 0,
+          "topicCount": 4
+        },
+        "filterId": "0x3673954f8dc61e8442314b5f1be7bd1d",
+        "gasUsed": 284611
+      },
+      "rpcRequests": 63
+    }
+  },
+  "intent1_freeze_lasna_verdict": {
+    "tool": "trace_reactive_tx",
+    "network": "lasna",
+    "verdict": "USER_TX",
+    "confidence": "proven",
+    "summary": "User transaction on Reactive, not a reaction. If it called subscribe() or depositTo(), check its logs.",
+    "findings": [],
+    "fix": [],
+    "limits": [],
+    "data": {
+      "rnkTxType": "u",
+      "rpcRequests": 1
+    }
+  },
+  "intent3_approve_lasna_verdict": {
+    "tool": "trace_reactive_tx",
+    "network": "lasna",
+    "verdict": "USER_TX",
+    "confidence": "proven",
+    "summary": "User transaction on Reactive, not a reaction. If it called subscribe() or depositTo(), check its logs.",
+    "findings": [],
+    "fix": [],
+    "limits": [],
+    "data": {
+      "rnkTxType": "u",
+      "rpcRequests": 1
+    }
+  },
+  "vault_unfrozen_unichain_callback": {
+    "tool": "trace_origin_event",
+    "network": "lasna",
+    "verdict": "CALLBACK_NOT_POSTED",
+    "confidence": "cannot_prove",
+    "summary": "Reaction succeeded; callback problem: No delivery result for the callback (log 2) to Unichain Sepolia, and no CallbackPosted event exists on this network in the last 30,000 blocks: results are not being posted back, so delivery cannot be read from Reactive.",
+    "findings": [
+      {
+        "stage": "sequencing",
+        "verdict": "SEQUENCED_CARRIED",
+        "confidence": "proven",
+        "summary": "Origin block 61881913 was processed in Reactive block 8924830; the log was carried for reaction (it matched an active subscriber then).",
+        "evidence": [
+          {
+            "kind": "rnk_getBlockSequences",
+            "ref": "8924830",
+            "note": "row with the origin tx and log index"
+          }
+        ]
+      },
+      {
+        "stage": "reaction",
+        "verdict": "REACTED",
+        "confidence": "proven",
+        "summary": "react() succeeded and requested 1 callback(s).",
+        "evidence": [
+          {
+            "kind": "reactive tx",
+            "ref": "0xf9738d2d7b1cdf2cad0cb88c7372ec81e3aac46796884edf3dbdb143e9ebc7bf",
+            "note": "block 8924830, gasUsed 85084",
+            "url": "https://lasna.reactscan.net/tx/0xf9738d2d7b1cdf2cad0cb88c7372ec81e3aac46796884edf3dbdb143e9ebc7bf"
+          }
+        ]
+      },
+      {
+        "stage": "callback",
+        "verdict": "GAS_BUDGET",
+        "confidence": "likely",
+        "summary": "Of gasLimit 600000, about 445800 reaches the target (proxy overhead 130000, intrinsic ~24200).",
+        "evidence": []
+      },
+      {
+        "stage": "callback",
+        "verdict": "DEST_FUNDING",
+        "confidence": "proven",
+        "summary": "Recipient on Unichain Sepolia (1301) now: debt 0 native, reserves 0.00199948015265 native at proxy 0x775c9B990ADe401060B78D0e98684eEf8d2466C1.",
+        "evidence": []
+      },
+      {
+        "stage": "delivery",
+        "verdict": "CALLBACK_NOT_POSTED",
+        "confidence": "cannot_prove",
+        "summary": "No delivery result for the callback (log 2) to Unichain Sepolia, and no CallbackPosted event exists on this network in the last 30,000 blocks: results are not being posted back, so delivery cannot be read from Reactive.",
+        "evidence": [
+          {
+            "kind": "getCallbacks",
+            "ref": "0xf9738d2d7b1cdf2cad0cb88c7372ec81e3aac46796884edf3dbdb143e9ebc7bf",
+            "note": "empty"
+          }
+        ]
+      },
+      {
+        "stage": "delivery",
+        "verdict": "NO_FAILURE_SEEN",
+        "confidence": "cannot_prove",
+        "summary": "No CallbackFailure for 0x26D8Cdb8F670f46188270255D58aba211f848b31 at the Unichain Sepolia proxy in blocks 68445773-68446399: the callback either succeeded or was never delivered. Check the recipient's own events.",
+        "evidence": []
+      }
+    ],
+    "fix": [],
+    "limits": [
+      "The type of the first callback parameter was not verified; pass functionSignature to check it."
+    ],
+    "data": {
+      "originLogs": {
+        "items": [
+          {
+            "logIndex": 0,
+            "address": "0x6B81f6C156e6AbdA4040E5534813736d8acf5BEd",
+            "topic0": "0x2270c927c2e7b19b3967e91b2b2139e3f2226d295966081a469cfa9d43a59a57",
+            "topics": 2
+          }
+        ],
+        "total": 1,
+        "truncated": false
+      },
+      "processedInBlock": 8924830,
+      "reaction": {
+        "tx": "0xf9738d2d7b1cdf2cad0cb88c7372ec81e3aac46796884edf3dbdb143e9ebc7bf",
+        "block": 8924830,
+        "route": "omni (0x8888\u20268888)",
+        "rc": "0xC2c5A2d58024F985E3060875590b4693d789559B",
+        "rcAttribution": "proven",
+        "origin": {
+          "chainId": 84532,
+          "chain": "Base Sepolia",
+          "contract": "0x6B81f6C156e6AbdA4040E5534813736d8acf5BEd",
+          "block": 61881913,
+          "tx": "0x760dd134c84f4d554fc80849db2fb0f2f8281b9519832a6335a0e29ac457d207",
+          "logIndex": 0,
+          "topicCount": 2
+        },
+        "filterId": "0x548c5d754c1baa398964d284f2b24ed1",
+        "gasUsed": 85084
+      },
+      "callbacks": [
+        {
+          "destination": "Unichain Sepolia (1301)",
+          "recipient": "0x26D8Cdb8F670f46188270255D58aba211f848b31",
+          "gasLimit": "600000",
+          "legacy": false,
+          "payload": "0x7c8f58d00000000000000000000000000000000000000000000000000000000000000000\u2026"
+        }
+      ],
+      "rpcRequests": 60
+    }
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "deployerAddress": "0x1d760Ef5F35f7ae3fE4B7a7196FBA945Fa4C9d0C",
+  "aiSignerAddress": "0x8E0bfff29c87E49815B8bCF95033ea6853854741",
+  "lasna": {
+    "chainId": 5318007,
+    "SynapseReactor": "0xC2c5A2d58024F985E3060875590b4693d789559B"
+  },
+  "baseSepolia": {
+    "chainId": 84532,
+    "callbackProxy": "0x476F44b11F5C942c58f4c8E3d0300E5710743585",
+    "DemoToken": "0x26D8Cdb8F670f46188270255D58aba211f848b31",
+    "SynapseGuardVault": "0x6B81f6C156e6AbdA4040E5534813736d8acf5BEd"
+  },
+  "unichainSepolia": {
+    "chainId": 1301,
+    "callbackProxy": "0x775c9B990ADe401060B78D0e98684eEf8d2466C1",
+    "SynapseUnichainSentinel": "0x26D8Cdb8F670f46188270255D58aba211f848b31"
+  },
+  "txs": {
+    "deploySynapseReactor": "0xdd6b58ce5cf38eba1582c87052c2b6a6c2efbe07504cbf607b589312f7916e2f",
+    "deployDemoToken": "0xb49ae7c12e6a597e349e202f38c6efeb473c9914047f4ea3c35eb612cf6a6513",
+    "deploySynapseGuardVault": "0x157ca9ca7a5570e8e7d91f6996226bb190c0669e75f9e6e1f5efecdfc27f6508",
+    "deploySynapseUnichainSentinel": "0xa2902a668fa5c7d5acc987c8fd1d630b7662276257372d5c9c2a21e5eee9b465",
+    "vaultProxyFunded": "0x8939273b94ffecd120bd2144792c5f24e326d917beded000b71163dadf30f6a6",
+    "vaultLiquiditySeeded": {
+      "eth": "0x7e8749c03cb45d74f9923a6c5ed2e70e8f7511d75f03a57a3bda2f1574c33a06",
+      "mint": "0x72369e24f5b95752d8c9445c1423451ac52e17905e7bf129651175dee97e3fe3",
+      "approve": "0x7287e20f242d606cfa9e45479a9b03f4fcf4d6a1b1b4ad595892d2e21c4c0aed",
+      "depositToken": "0xad2f5635122b3457acbef6a366dc34e0cb0f4df07701663751f91021c27c9945"
+    },
+    "sentinelProxyFunded": "0x1f682ac428e572e075570d4eafc6a7c565cf8f3647a450da4cc3508c575d812c",
+    "reactorSystemFunded": "0x2d147bc00327182071fe13326f448d4f2f19cc63d5f728de5cf255074273e82d",
+    "configureAndSubscribe": "0x8bfa8f74833df516687742e1806e936f19a4d77f0cc38a03c8513f010ad88d68"
+  },
+  "deployedUtc": "2026-11-21T21:55:34.483223+00:00",
+  "sourcify": {
+    "SynapseReactor": {
+      "chainId": 5318007,
+      "address": "0xC2c5A2d58024F985E3060875590b4693d789559B",
+      "returncode": 0,
+      "output": "3d0b3e8b-ddb2-4fb5-ae2f-31fa37f6b3c3\thttps://sourcify.dev/server/verify-ui/jobs/3d0b3e8b-ddb2-4fb5-ae2f-31fa37f6b3c3\n\nStart verifying contract `0xC2c5A2d58024F985E3060875590b4693d789559B` deployed on 5318007\n\nVerifying on sourcify...\nSubmitting verification for [SynapseReactor] 0xC2c5A2d58024F985E3060875590b4693d789559B.\nSubmitted contract for verification:\n\tVerification Job ID: `3d0b3e8b-ddb2-4fb5-ae2f-31fa37f6b3c3`\n\tURL: https://sourcify.dev/server/verify-ui/jobs/3d0b3e8b-ddb2-4fb5-ae2f-31fa37f6b3c3"
+    },
+    "DemoToken": {
+      "chainId": 84532,
+      "address": "0x26D8Cdb8F670f46188270255D58aba211f848b31",
+      "returncode": 0,
+      "output": "7d5cf4c5-3c06-4a9f-962b-7e5ad1f6f3c2\thttps://sourcify.dev/server/verify-ui/jobs/7d5cf4c5-3c06-4a9f-962b-7e5ad1f6f3c2\n\nStart verifying contract `0x26D8Cdb8F670f46188270255D58aba211f848b31` deployed on base-sepolia\nConstructor args: 0x000000000000000000000000000000000000000000000000000000000000008000000000000000000000000000000000000000000000000000000000000000c0000000000000000000000000000000000000000000000000000000000000001200000000000000000000000000000000000000000000152d02c7e14af6800000000000000000000000000000000000000000000000000000000000000000000b53796e61707365205553440000000000000000000000000"
+    },
+    "SynapseGuardVault": {
+      "chainId": 84532,
+      "address": "0x6B81f6C156e6AbdA4040E5534813736d8acf5BEd",
+      "returncode": 0,
+      "output": "ce5b9c1a-29ec-44c7-a5e4-a23f0efb7bd7\thttps://sourcify.dev/server/verify-ui/jobs/ce5b9c1a-29ec-44c7-a5e4-a23f0efb7bd7\n\nStart verifying contract `0x6B81f6C156e6AbdA4040E5534813736d8acf5BEd` deployed on base-sepolia\nConstructor args: 0x000000000000000000000000476f44b11f5c942c58f4c8e3d0300e5710743585000000000000000000000000c2c5a2d58024f985e3060875590b4693d789559b0000000000000000000000008e0bfff29c87e49815b8bcf95033ea685385474100000000000000000000000000000000000000000000001b1ae4d6e2ef500000\n\nVerifying on sourcify...\nSubmitting verification for [SynapseGuardVault] 0x6B81f6C156e6AbdA4040E5534813736d8a"
+    },
+    "SynapseUnichainSentinel": {
+      "chainId": 1301,
+      "address": "0x26D8Cdb8F670f46188270255D58aba211f848b31",
+      "returncode": 0,
+      "output": "c2a9f460-c0b2-4d4a-8a11-c93f6b415c3c\thttps://sourcify.dev/server/verify-ui/jobs/c2a9f460-c0b2-4d4a-8a11-c93f6b415c3c\n\nStart verifying contract `0x26D8Cdb8F670f46188270255D58aba211f848b31` deployed on unichain-sepolia\nConstructor args: 0x000000000000000000000000775c9b990ade401060b78d0e98684eef8d2466c1000000000000000000000000c2c5a2d58024f985e3060875590b4693d789559b\n\nVerifying on sourcify...\nSubmitting verification for [SynapseUnichainSentinel] 0x26D8Cdb8F670f46188270255D58aba211f848b31.\nSubmitted contract for verification:\n\tVerification Job ID: `c2a9f460-c0b2-4d4a-8a11-c93f6b415c3c`\n\tURL: https:"
+    }
+  }
+}

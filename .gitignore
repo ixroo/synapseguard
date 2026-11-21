@@ -1,0 +1,12 @@
+.env
+.env.*
+!.env.example
+broadcast/
+cache/
+out/
+.venv/
+__pycache__/
+.pytest_cache/
+*.egg-info/
+*.db
+*.mp4
